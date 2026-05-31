@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">蜥蜴巢穴</string>
+    <string name="temperature_label">温度</string>
+    <string name="humidity_label">湿度</string>
+    <string name="temperature_unit">℃</string>
+    <string name="loading">加载中…</string>
+    <string name="connecting_device">正在连接设备…</string>
+    <string name="network_disconnected">网络已断开</string>
+    <string name="network_reconnecting">正在重连…</string>
+    <string name="retry">重试</string>
+    <string name="full_screen">全屏</string>
+    <string name="exit_full_screen">退出全屏</string>
+    <string name="no_history_data">暂无历史数据</string>
+    <string name="video_load_failed">视频加载失败</string>
+    <string name="data_load_failed">数据加载失败</string>
+</resources>
