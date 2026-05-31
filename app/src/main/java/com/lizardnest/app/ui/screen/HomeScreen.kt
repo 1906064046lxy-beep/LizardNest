@@ -102,7 +102,8 @@ fun HomeScreen(
                 )
 
                 // === 错误提示 + 重试按钮 ===
-                if (uiState.errorMessage != null) {
+                val errorMessage = uiState.errorMessage
+                if (errorMessage != null) {
                     Column(
                         modifier = Modifier
                             .fillMaxWidth()
@@ -110,7 +111,7 @@ fun HomeScreen(
                         horizontalAlignment = Alignment.CenterHorizontally
                     ) {
                         Text(
-                            text = uiState.errorMessage,
+                            text = errorMessage,
                             color = MaterialTheme.colorScheme.error,
                             textAlign = TextAlign.Center,
                             style = MaterialTheme.typography.bodyMedium

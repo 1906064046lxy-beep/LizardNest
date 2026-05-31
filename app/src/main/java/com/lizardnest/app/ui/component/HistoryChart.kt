@@ -111,7 +111,7 @@ fun HistoryChart(
                                 touchDataPoint = null
                             }
                         ) { _, dragAmount ->
-                            touchX = (touchX + dragAmount).coerceIn(0f, size.width)
+                            touchX = (touchX + dragAmount).coerceIn(0f, size.width.toFloat())
                             // 查找最接近的数据点
                             val ratio = touchX / size.width
                             val idx = (ratio * (data.size - 1)).toInt()
@@ -121,7 +121,7 @@ fun HistoryChart(
                     }
                     .pointerInput(data) {
                         detectTapGestures { offset ->
-                            touchX = offset.x.coerceIn(0f, size.width)
+                            touchX = offset.x.coerceIn(0f, size.width.toFloat())
                             val ratio = touchX / size.width
                             val idx = (ratio * (data.size - 1)).toInt()
                                 .coerceIn(0, data.size - 1)
